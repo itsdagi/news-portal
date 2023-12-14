@@ -10,4 +10,6 @@ async function dataRequest(){
      }
 }
 
-dataRequest(url).then(data => console.log(data))
+dataRequest(url).then(data => {
+    data.articles.forEach(item =>{console.log(item)})
+})
